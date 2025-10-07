@@ -7,7 +7,7 @@ import streamlit as st
 from auth import initialize_auth, is_authenticated, show_login_form, show_user_info, get_current_user, has_role, require_auth, require_role
 from models import UserRole, OrderStatus, TransactionType, OrderItem
 from database import db
-from utils import (
+from util import (
     format_currency, create_products_dataframe, create_orders_dataframe, 
     create_transactions_dataframe, show_inventory_overview_chart, show_order_status_chart,
     show_sales_overview, show_low_stock_alerts, calculate_order_metrics, show_order_timeline
