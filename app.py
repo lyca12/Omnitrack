@@ -1,3 +1,8 @@
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 import streamlit as st
 from auth import initialize_auth, is_authenticated, show_login_form, show_user_info, get_current_user, has_role, require_auth, require_role
 from models import UserRole, OrderStatus, TransactionType, OrderItem
